@@ -3,21 +3,33 @@ package week1.Assignments0819;
 public class IsPrime {
 	
 	public static void main(String[] args) {
-		int n = 11;
+		int n = 97;
+		int a = 0;
+		int b = 0;
 	
 		//finding a given number is Prime or Non Prime 
-		
-		for (int i = 2; i < (n-1) ; i++) {
+		if(n == 0) {
+			System.out.println(n+" - The number is neither prime nor composite");
+		}
+	    else {
+		for (int i = 1; i <= n ; i++) {
 			
 		if(n%i == 0) {
-			System.out.println(n+" - The number is non - Prime");
-			break;
+			b = a+1;
+			a = b;
+		}
+	
+		}
+		
+		if (b == 2) {
+				System.out.println(n+" - The number is Prime");
 		}
 		else {
-			System.out.println(n+" - The number is Prime");
-			break;
+				System.out.println(n+" - The number is Non - Prime");
+			}
+			}
 		}
 		}
-	}
 
-}
+
+
