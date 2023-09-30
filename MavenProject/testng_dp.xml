@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DynamicParameterization">
+	<parameter name ="url" value = "http://leaftaps.com/opentaps/control/main"></parameter>
+    <parameter name ="username" value = "Demosalesmanager"></parameter>
+    <parameter name ="password" value = "crmsfa"></parameter>
+    
+  <test name="DynamicParameterization-Edit Lead">
+   <parameter name = "browser" value = "chrome"></parameter>
+    <classes>
+      <class name="week6.day1.EditLead"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- DynamicParameterization -->

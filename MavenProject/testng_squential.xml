@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Leaftaps">
+  <test thread-count="5" name="LeadsModule">
+    <classes>
+      <class name="week5.day2.testng.MergeLead"/>
+      <class name="week5.day2.testng.CreateLead"/>
+      <class name="week5.day2.testng.DeleteLead"/>
+      <class name="week5.day2.testng.EditLead"/>
+    </classes>
+  </test> <!-- LeadsModule -->
+</suite> <!-- Leaftaps -->
